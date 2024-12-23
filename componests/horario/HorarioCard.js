@@ -1,6 +1,6 @@
 import { TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
+import Icon from 'react-native-vector-icons/FontAwesome'; // ou outra fonte suportada
 import styles from './HorarioCard.module.css';
 import axios from 'axios';
 
@@ -37,10 +37,10 @@ function HorarioCard({ id, name, horario, category, handleRemove }) {
       </p>
       <div className={styles.project_card_actions}>
         <TouchableOpacity onPress={() => navigation.navigate('HorarioCard', { id })}>
-          <BsPencil className={styles.icon} /> Editar
+          <Icon name="pencil" size={20} style={styles.icon} /> Editar
         </TouchableOpacity>
         <button onClick={remove}>
-          <BsFillTrashFill className={styles.icon} /> Excluir
+          <Icon name="trash" size={20} style={styles.icon} /> Excluir
         </button>
       </div>
     </div>

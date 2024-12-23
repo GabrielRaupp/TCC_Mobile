@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "componests/form/SubmitButton.js", "componests/form/Input.js", "componests/form/Select.js"  ]
 }
